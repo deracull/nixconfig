@@ -28,23 +28,26 @@
         config.allowUnfree = true;
       };
       pkgs = unstable;
+      config = (builtins.fromTOML (builtins.readFile ./config.toml));
+      user = config.user;
+      development = config.development;
       spicePkgs = spicetify-nix.legacyPackages.${system};
     in {
-      nixosConfigurations.invranet = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.${user.username} = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [
-          ./config/configuration.nix
+          (import ./config/configuration.nix user config.system)
           home-manager.nixosModules.home-manager
           {
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
               backupFileExtension = "backup";
-              users.invranet =
+              users.${user.username} =
                 (import ./home/home.nix spicePkgs inputs);
               extraSpecialArgs = {
-                inherit pkgs unstable stable;
-                username = "invranet";
+                inherit pkgs development user unstable stable;
+                username = user.username;
               };
             };
           }
