@@ -1,4 +1,4 @@
-# Invra's Nix Flake.
+# fuck Invra's Nix Flake.
 This is a flake for NixOS, and also supports Nix-darwin! This is designed to me modular for other people to use. This <i>is</i> more for <u>advanced users</u> so if you are up for the
 task to do this, this flake might be for you.
 
