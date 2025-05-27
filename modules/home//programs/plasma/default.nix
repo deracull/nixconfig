@@ -92,9 +92,9 @@ in
       "baloofilerc"."Basic Settings"."Indexing-Enabled" = false;
       "kwinrc"."org.kde.kdecoration2"."ButtonsOnLeft" = "SF";
       "kwinrc"."Desktops" = {
-        "Rows" = 3;
+        "Rows" = 1;
         "Number" = {
-          value = 9;
+          value = 3;
           immutable = true;
         };
       };
