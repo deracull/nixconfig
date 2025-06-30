@@ -26,7 +26,7 @@
     greeter = "gdm";
     hostname = "NixOS";
     interfaces = { };
-    kernelParams = [ " " ];
+    kernelParams = [ "intel_iommu=on" ];
     locale = "en_AU.UTF-8";
     networking = {
       dhcpEnabled = true;
