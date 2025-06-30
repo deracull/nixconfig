@@ -3,6 +3,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
     nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-25.05";
+    nixpkgs-24_11.url = "github:NixOS/nixpkgs/nixos-24.11";
     stylix.url = "github:danth/stylix";
     neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
     zen-browser.url = "gitlab:InvraNet/zen-flake";
@@ -33,6 +34,7 @@
   outputs =
     {
       nixpkgs-stable,
+      nixpkgs-24_11,
       flake-utils,
       darwin,
       nixpkgs,
@@ -74,6 +76,7 @@
                     pkg:
                     builtins.elem (nixpkgs.lib.getName pkg) [
                       "spotify"
+                      "bitwig-studio-unwrapped"
                       "anydesk"
                       "davinci-resolve"
                       "steam-unwrapped"
@@ -94,6 +97,7 @@
                     pkg:
                     builtins.elem (nixpkgs.lib.getName pkg) [
                       "spotify"
+                      "bitwig-studio-unwrapped"
                       "anydesk"
                       "davinci-resolve"
                       "steam-unwrapped"
@@ -147,6 +151,7 @@
                     pkg:
                     builtins.elem (nixpkgs.lib.getName pkg) [
                       "spotify"
+                      "bitwig-studio-unwrapped"
                       "anydesk"
                       "davinci-resolve"
                       "steam-unwrapped"
@@ -167,6 +172,7 @@
                     pkg:
                     builtins.elem (nixpkgs.lib.getName pkg) [
                       "spotify"
+                      "bitwig-studio-unwrapped"
                       "anydesk"
                       "davinci-resolve"
                       "steam-unwrapped"
@@ -227,6 +233,7 @@
                   pkg:
                   builtins.elem (nixpkgs.lib.getName pkg) [
                     "spotify"
+                    "bitwig-studio-unwrapped"
                     "anydesk"
                     "davinci-resolve"
                     "steam-unwrapped"
@@ -246,6 +253,7 @@
                   pkg:
                   builtins.elem (nixpkgs.lib.getName pkg) [
                     "spotify"
+                    "bitwig-studio-unwrapped"
                     "anydesk"
                     "davinci-resolve"
                     "steam-unwrapped"
@@ -284,6 +292,7 @@
                     custils
                     ;
                   pkgs = unstable;
+                  pkgs-24_11 = import nixpkgs-24_11 { inherit system; };
                   system = configTOML.system;
                   development = configTOML.development;
                   username = user.username;
