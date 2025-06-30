@@ -59,7 +59,7 @@
         enable = true;
       };
     };
-    timezone = "Australia/Sydney";
+    timezone = "Asia/Dubai";
   };
   user = {
     displayName = "dera is a wannabe femboy";

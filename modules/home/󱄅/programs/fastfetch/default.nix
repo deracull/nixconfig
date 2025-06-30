@@ -26,13 +26,7 @@ in
   programs.fastfetch = {
     enable = true;
     settings = {
-      logo = {
-        source = ./art.bin;
-        width = 54;
-        height = 22;
-        type = "raw";
-      };
-      display.separator = " ";
+     display.separator = " ";
       modules =
         [
           {

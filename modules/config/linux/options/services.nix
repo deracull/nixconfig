@@ -11,7 +11,7 @@
       videoDrivers = system.graphics.wanted;
       xkb = {
         layout = "us,us";
-        options = "grp:alt_shift_toggle,eurosign:e,caps:escape";
+        options = "grp:alt_shift_toggle,eurosign:e";
         variant = ",workman";
       };
     };

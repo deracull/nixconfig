@@ -46,8 +46,23 @@
           enable = true;
           multiplier = 5;
         };
+        shikiCodeblocks = {
+        enable = true;  
+        };
+        showHiddenChannels = {
+        enable = true;
+        showMode = "plain";
+        };
+        serverInfo.enable = true;
+        viewIcons.enable = true;
+        viewRaw.enable = true;
+        pinDMs.enable = true;
+        userVoiceShow.enable = true;
+        messageClickActions.enable = true;
+        validUser.enable = true;
+        readAllNotificationsButton.enable = true;
+        messageLogger.enable = true;
         webKeybinds.enable = true;
-        webRichPresence.enable = true;
         webScreenShareFixes.enable = true;
         youtubeAdblock.enable = true;
       };

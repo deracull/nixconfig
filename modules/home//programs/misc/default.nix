@@ -11,6 +11,24 @@
       pavucontrol
       signal-desktop-bin
       ungoogled-chromium
-    ];
+      tor-browser
+      abaddon
+      anydesk
+      flameshot
+      rmpc
+      mpd-small
+      astroterm
+      detect-it-easy
+      ghidra
+      whois
+      flatpak
+      hollywood
+      cava
+      tigervnc
+      dissent
+      mov-cli
+      ani-cli
+      tt
+   ];
   };
 }

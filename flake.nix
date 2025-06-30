@@ -74,6 +74,7 @@
                     pkg:
                     builtins.elem (nixpkgs.lib.getName pkg) [
                       "spotify"
+                      "anydesk"
                       "davinci-resolve"
                       "steam-unwrapped"
                       "steam_osx"
@@ -93,6 +94,7 @@
                     pkg:
                     builtins.elem (nixpkgs.lib.getName pkg) [
                       "spotify"
+                      "anydesk"
                       "davinci-resolve"
                       "steam-unwrapped"
                       "steam"
@@ -145,6 +147,7 @@
                     pkg:
                     builtins.elem (nixpkgs.lib.getName pkg) [
                       "spotify"
+                      "anydesk"
                       "davinci-resolve"
                       "steam-unwrapped"
                       "steam"
@@ -164,6 +167,7 @@
                     pkg:
                     builtins.elem (nixpkgs.lib.getName pkg) [
                       "spotify"
+                      "anydesk"
                       "davinci-resolve"
                       "steam-unwrapped"
                       "steam_osx"
@@ -223,6 +227,7 @@
                   pkg:
                   builtins.elem (nixpkgs.lib.getName pkg) [
                     "spotify"
+                    "anydesk"
                     "davinci-resolve"
                     "steam-unwrapped"
                     "steam_osx"
@@ -241,6 +246,7 @@
                   pkg:
                   builtins.elem (nixpkgs.lib.getName pkg) [
                     "spotify"
+                    "anydesk"
                     "davinci-resolve"
                     "steam-unwrapped"
                     "steam_osx"
