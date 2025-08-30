@@ -9,6 +9,14 @@
     homeDirectory = "/home/${user.username}";
     packages = with unstable; [
       vlc
+      zapret
+      yt-dlp
+      wine
+      winetricks
+      yabridge
+      yabridgectl
+      discordo
+      kdePackages.dolphin
       wayvnc
       helvum
       parsec-bin
